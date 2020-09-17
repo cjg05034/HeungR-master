@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.NoActionBar.Fullscreen" parent="@style/MaterialDrawerTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="material_drawer_selected_text">@color/primary</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        // ...
+
+
+    </style>
+
+
+    <style name="ToolbarButtonStyle" parent="@android:style/Widget.Material.Button.Borderless">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="DisabledToolbarButton" parent="ToolbarButtonStyle">
+        <item name="android:textColor">@color/Bright_white</item>
+    </style>
+
+    <color name="IconColor">@color/Phantom_Green</color>
+
+    <style name="SwipeLayout">
+        <item name="android:paddingBottom">1px</item>
+        <item name="android:background">#e5e5e5</item>
+    </style>
+
+</resources>

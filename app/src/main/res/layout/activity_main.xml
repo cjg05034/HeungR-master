@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bright_white"
+    android:orientation="vertical">
+
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/item_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dsv_orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        tools:listitem="@layout/item_album_card">
+
+    </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_picker">
+
+        <ImageButton
+            android:id="@+id/renameButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="40dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/edit"
+            android:tint="@color/Dark_Sapphire"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/quickBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/round"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/round2" />
+
+        <ImageButton
+            android:id="@+id/quickBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/microphone"
+            android:tint="@color/Dark_Sapphire"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/settingBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="40dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/settings5"
+            android:tint="@color/Dark_Sapphire"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/quickBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
